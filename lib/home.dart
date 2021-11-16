@@ -14,7 +14,18 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: const NavigationDrawer(),
-      appBar: AppBar(title: const Text('Home'), centerTitle: true),
+      appBar: AppBar(
+          title: const Text(
+            'Home',
+          ),
+          centerTitle: true),
+      body: const Align(
+        child: Text(
+          "Howdy",
+          style: TextStyle(fontSize: 32),
+        ),
+        alignment: Alignment.center,
+      ),
     );
   }
 }
